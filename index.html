@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--
+            Need an Input for Date
+            Need an Input for Calories
+            Need an Input for Steps
+            Need an Input for Weight
+            Need an Input for Water
+        -->
+        <form>
+            <div class="form-container">
+                <label for="date"></label>
+                <input type="date" id="date">
+
+                <label for="calories"></label>
+                <input type="text" id="calories" placeholder="Calories">
+
+                <label for="steps"></label>
+                <input type="text" id="steps" placeholder="Steps">
+
+                <label for="weight"></label>
+                <input type="text" id="weight" placeholder="Weight">
+
+                <label for="water"></label>
+                <input type="text" id="water" placeholder="Water">
+            </div>
+            
+            <button id="input-btn">SAVE INPUT</button>
+            <button id="delete-btn">DELETE ALL</button>
+        </form>
+        <table style="width:100%">
+            <thead>
+                <tr>
+                    <td>Date</td>
+                    <td>Calories</td>
+                    <td>Steps</td>
+                    <td>Weight</td>
+                    <td>Water</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="table-el"></tr>
+            </tbody>
+        </table>
+        <script src="script.js"></script>
+    </body>
+</html>
